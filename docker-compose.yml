@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  react:
+    image: bid-4-meal
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    command: ["tail", "-f", "/dev/null"]
+    ports:
+      - '3000:3000'
+      - '3001:3001'
+    volumes:
+        - .:/usr/src/app
+    container_name: bid-4-meal
