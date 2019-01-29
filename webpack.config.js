@@ -1,37 +1,37 @@
-const path = require('path');
+const path = require("path");
 
-const BUILD_DIR = path.resolve(__dirname, 'dist');
-const APP_DIR = path.resolve(__dirname, 'src');
+const BUILD_DIR = path.resolve(__dirname, "dist");
+const APP_DIR = path.resolve(__dirname, "src");
 
 const config = {
   entry: {
-    bundle: APP_DIR + '/index.jsx'
+    bundle: `${APP_DIR}/index.jsx`
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   output: {
     path: BUILD_DIR,
-    filename: '[name].js'
+    filename: "[name].js"
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: '.',
+    contentBase: ".",
     port: 3000,
     open: true,
     watchOptions: {
       ignored: /node_modules/
     }
   },
-  module : {
+  module: {
     rules: [
       {
         test: /\.jsx?/,
         include: APP_DIR,
         use: [
           {
-            loader: 'babel-loader'
+            loader: "babel-loader"
           },
           {
-            loader: 'eslint-loader'
+            loader: "eslint-loader"
           }
         ]
       },
@@ -39,16 +39,16 @@ const config = {
         test: /\.(scss)$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: "style-loader"
           },
           {
-            loader: 'css-loader',
+            loader: "css-loader",
             options: {
               sourceMap: true
             }
           },
           {
-            loader: 'sass-loader',
+            loader: "sass-loader",
             options: {
               sourceMap: true
             }
@@ -59,10 +59,10 @@ const config = {
         test: /\.(css)$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: "style-loader"
           },
           {
-            loader: 'css-loader',
+            loader: "css-loader",
             options: {
               sourceMap: true
             }

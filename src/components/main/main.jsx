@@ -1,24 +1,18 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import PropTypes from "prop-types";
 
-class Main extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Main = ({ views }) => (
+  <main>
+    <Switch>
+      {views.map(({ path, component }) => (
+        <Route key={path} path={path} component={component} />
+      ))}
+    </Switch>
+  </main>
+);
 
-  render() {
-    return (
-      <main>
-        <Switch>
-          {
-            this.props.views.map((view) => {
-              return <Route key={view.path} path={view.path} component={view.component}/>;
-            })
-          }
-        </Switch>
-      </main>
-    );
-  }
-}
-
+Main.propTypes = {
+  views: PropTypes.instanceOf(PropTypes.Array).isRequired
+};
 export default Main;
