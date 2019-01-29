@@ -50,7 +50,7 @@
   "scripts": {
     "build": "rm -rf dist/ && webpack --progress --mode=development",
     "build-prod": "rm -rf dist/ && webpack --progress --mode=production",
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack-dev-server --mode development --hot",
     "test": "jest",
     "lint:check": "eslint . --ext=js,jsx",
     "lint:fix": "eslint . --ext=js,jsx --fix; exit 0",
