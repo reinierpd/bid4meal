@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MealForm should render ok 1`] = `
+<ForwardRef(Bootstrap(Modal))
+  aria-labelledby="contained-modal-title-vcenter"
+  centered={true}
+  onHide={[Function]}
+  show={false}
+  size="lg"
+>
+  <ForwardRef(Bootstrap(ModalHeader))
+    closeButton={true}
+  >
+    <ForwardRef(Bootstrap(ModalTitle))
+      id="contained-modal-title-vcenter"
+    >
+      Add your meals
+    </ForwardRef(Bootstrap(ModalTitle))>
+  </ForwardRef(Bootstrap(ModalHeader))>
+  <ForwardRef(Bootstrap(ModalBody))>
+    <ForwardRef(Bootstrap(Form))>
+      <ForwardRef(Bootstrap(FormRow))>
+        <ForwardRef(Bootstrap(FormGroup))
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "propTypes": undefined,
+              "render": [Function],
+            }
+          }
+          controlId="selectedMeal"
+          md="4"
+        >
+          <ForwardRef(ContextTransform)>
+            Select your meal
+          </ForwardRef(ContextTransform)>
+          <ForwardRef(ContextTransform)
+            as="select"
+            onChange={[Function]}
+          >
+            <option
+              key="1"
+              value={0}
+            >
+              Some meal1
+            </option>
+            <option
+              key="2"
+              value={1}
+            >
+              Another meal1
+            </option>
+          </ForwardRef(ContextTransform)>
+        </ForwardRef(Bootstrap(FormGroup))>
+        <ForwardRef(Bootstrap(FormGroup))
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "propTypes": undefined,
+              "render": [Function],
+            }
+          }
+          controlId="amount"
+          md={
+            Object {
+              "offset": 1,
+              "span": 5,
+            }
+          }
+        >
+          <ForwardRef(ContextTransform)>
+            Choose price (
+            EUR
+            )
+          </ForwardRef(ContextTransform)>
+          <ComponentEnhancer(undefined)
+            activeDotStyle={Object {}}
+            className=""
+            defaultValue={0}
+            disabled={false}
+            dotStyle={Object {}}
+            dots={false}
+            handle={[Function]}
+            handleStyle={
+              Array [
+                Object {},
+              ]
+            }
+            included={true}
+            marks={
+              Object {
+                "0": 0,
+                "10": 10,
+                "15": 15,
+                "20": 20,
+                "5": 5,
+              }
+            }
+            max={20}
+            min={0}
+            onAfterChange={[Function]}
+            onBeforeChange={[Function]}
+            onChange={[Function]}
+            prefixCls="rc-slider"
+            railStyle={Object {}}
+            step={5}
+            trackStyle={
+              Array [
+                Object {},
+              ]
+            }
+            vertical={false}
+          />
+        </ForwardRef(Bootstrap(FormGroup))>
+      </ForwardRef(Bootstrap(FormRow))>
+    </ForwardRef(Bootstrap(Form))>
+  </ForwardRef(Bootstrap(ModalBody))>
+  <ForwardRef(Bootstrap(ModalFooter))>
+    <ForwardRef(Bootstrap(Button))
+      onClick={[Function]}
+      variant="outline-secondary"
+    >
+      Close
+    </ForwardRef(Bootstrap(Button))>
+    <ForwardRef(Bootstrap(Button))
+      onClick={[Function]}
+      variant="primary"
+    >
+      Add
+    </ForwardRef(Bootstrap(Button))>
+  </ForwardRef(Bootstrap(ModalFooter))>
+</ForwardRef(Bootstrap(Modal))>
+`;

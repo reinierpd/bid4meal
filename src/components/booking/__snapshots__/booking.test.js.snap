@@ -1,0 +1,491 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Booking User add a meal for a fight 1`] = `
+Object {
+  "addedMeals": Array [
+    Object {
+      "amount": 10,
+      "currency": "EUR",
+      "desc": "Snacks & Soda",
+      "journeyKey": "TST12 BCN-LAX 30/08/2014 08:35",
+      "mealId": "ML01",
+    },
+  ],
+  "editingFlight": null,
+  "showModal": false,
+}
+`;
+
+exports[`Booking User add a meal for a fight 2`] = `
+<Table
+  bsPrefix="table"
+  responsive={true}
+  striped={true}
+>
+  <div
+    className="table-responsive"
+  >
+    <table
+      className="table table-striped"
+    >
+      <thead>
+        <tr>
+          <th>
+            Flight
+          </th>
+          <th>
+            From/To
+          </th>
+          <th>
+            Departure
+          </th>
+          <th>
+            Travel duration
+          </th>
+          <th>
+            Meal
+          </th>
+          <th>
+            Meal price
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          key="TST12 BCN-LAX 30/08/2014 08:35"
+        >
+          <td>
+            <strong>
+              TST 12
+            </strong>
+          </td>
+          <td>
+            BCN
+            -
+            LAX
+          </td>
+          <td>
+            <t
+              ago={false}
+              calendar={false}
+              decimal={false}
+              element="time"
+              filter={[Function]}
+              format="ddd DD MMM YYYY"
+              fromNow={false}
+              interval={60000}
+              onChange={[Function]}
+              titleFormat=""
+              toNow={false}
+              unit={null}
+              unix={false}
+              utc={false}
+              withTitle={false}
+            >
+              <time
+                dateTime={"2014-08-30T00:35:00.000Z"}
+              >
+                Sat 30 Aug 2014
+              </time>
+            </t>
+          </td>
+          <td>
+            <t
+              ago={false}
+              calendar={false}
+              date="2014-08-30T19:45:00.000+08:00"
+              decimal={false}
+              duration="2014-08-30T08:35:00.000+08:00"
+              element="time"
+              filter={[Function]}
+              fromNow={false}
+              interval={60000}
+              onChange={[Function]}
+              titleFormat=""
+              toNow={false}
+              unit={null}
+              unix={false}
+              utc={false}
+              withTitle={false}
+            >
+              <time
+                dateTime={"2014-08-30T11:45:00.000Z"}
+              >
+                11:10:00
+              </time>
+            </t>
+          </td>
+          <td>
+            Snacks & Soda
+          </td>
+          <td>
+            10
+          </td>
+        </tr>
+        <tr
+          key="TST21 LAX-BCN 30/09/2014 08:35"
+        >
+          <td>
+            <strong>
+              TST 21
+            </strong>
+          </td>
+          <td>
+            LAX
+            -
+            BCN
+          </td>
+          <td>
+            <t
+              ago={false}
+              calendar={false}
+              decimal={false}
+              element="time"
+              filter={[Function]}
+              format="ddd DD MMM YYYY"
+              fromNow={false}
+              interval={60000}
+              onChange={[Function]}
+              titleFormat=""
+              toNow={false}
+              unit={null}
+              unix={false}
+              utc={false}
+              withTitle={false}
+            >
+              <time
+                dateTime={"2014-09-30T00:35:00.000Z"}
+              >
+                Tue 30 Sep 2014
+              </time>
+            </t>
+          </td>
+          <td>
+            <t
+              ago={false}
+              calendar={false}
+              date="2014-09-30T19:45:00.000+08:00"
+              decimal={false}
+              duration="2014-09-30T08:35:00.000+08:00"
+              element="time"
+              filter={[Function]}
+              fromNow={false}
+              interval={60000}
+              onChange={[Function]}
+              titleFormat=""
+              toNow={false}
+              unit={null}
+              unix={false}
+              utc={false}
+              withTitle={false}
+            >
+              <time
+                dateTime={"2014-09-30T11:45:00.000Z"}
+              >
+                11:10:00
+              </time>
+            </t>
+          </td>
+          <td>
+            <ForwardRef(Bootstrap(Button))
+              id="btn-add-1"
+              onClick={[Function]}
+            >
+              <Button
+                active={false}
+                bsPrefix="btn"
+                disabled={false}
+                id="btn-add-1"
+                innerRef={null}
+                onClick={[Function]}
+                type="button"
+                variant="primary"
+              >
+                <button
+                  className="btn btn-primary"
+                  disabled={false}
+                  id="btn-add-1"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  Add meal
+                </button>
+              </Button>
+            </ForwardRef(Bootstrap(Button))>
+          </td>
+          <td />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</Table>
+`;
+
+exports[`Booking should render ok 1`] = `
+<Fragment>
+  <ForwardRef(Bootstrap(Row))>
+    <ForwardRef(Bootstrap(Col))
+      sm="8"
+    >
+      <h2>
+        Reservation information
+      </h2>
+    </ForwardRef(Bootstrap(Col))>
+    <ForwardRef(Bootstrap(Col))
+      sm="4"
+    >
+      <ForwardRef(Bootstrap(Button))
+        disabled={true}
+        id="btn-submit"
+        onClick={[Function]}
+        size="lg"
+        variant="success"
+      >
+        Save
+      </ForwardRef(Bootstrap(Button))>
+    </ForwardRef(Bootstrap(Col))>
+  </ForwardRef(Bootstrap(Row))>
+  <hr
+    className="my-4"
+  />
+  <ForwardRef(Bootstrap(Row))
+    className="mb-5"
+  >
+    <ForwardRef(Bootstrap(Col))
+      xs={4}
+    >
+      <strong>
+        Reservation number: 
+      </strong>
+      TST123
+    </ForwardRef(Bootstrap(Col))>
+    <ForwardRef(Bootstrap(Col))
+      xs={4}
+    >
+      <strong>
+        Seats: 
+      </strong>
+      3
+    </ForwardRef(Bootstrap(Col))>
+    <ForwardRef(Bootstrap(Col))
+      xs={4}
+    >
+      <strong>
+        Status: 
+      </strong>
+      <ForwardRef(Bootstrap(Badge))
+        variant="success"
+      >
+        Confirmed
+      </ForwardRef(Bootstrap(Badge))>
+    </ForwardRef(Bootstrap(Col))>
+  </ForwardRef(Bootstrap(Row))>
+  <ForwardRef(Bootstrap(Row))>
+    <ForwardRef(Bootstrap(Table))
+      responsive={true}
+      striped={true}
+    >
+      <thead>
+        <tr>
+          <th>
+            Flight
+          </th>
+          <th>
+            From/To
+          </th>
+          <th>
+            Departure
+          </th>
+          <th>
+            Travel duration
+          </th>
+          <th>
+            Meal
+          </th>
+          <th>
+            Meal price
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          key="TST12 BCN-LAX 30/08/2014 08:35"
+        >
+          <td>
+            <strong>
+              TST 12
+            </strong>
+          </td>
+          <td>
+            BCN
+            -
+            LAX
+          </td>
+          <td>
+            <t
+              ago={false}
+              calendar={false}
+              decimal={false}
+              element="time"
+              filter={[Function]}
+              format="ddd DD MMM YYYY"
+              fromNow={false}
+              interval={60000}
+              onChange={[Function]}
+              titleFormat=""
+              toNow={false}
+              unit={null}
+              unix={false}
+              utc={false}
+              withTitle={false}
+            >
+              2014-08-30T08:35:00.000+08:00
+            </t>
+          </td>
+          <td>
+            <t
+              ago={false}
+              calendar={false}
+              date="2014-08-30T19:45:00.000+08:00"
+              decimal={false}
+              duration="2014-08-30T08:35:00.000+08:00"
+              element="time"
+              filter={[Function]}
+              fromNow={false}
+              interval={60000}
+              onChange={[Function]}
+              titleFormat=""
+              toNow={false}
+              unit={null}
+              unix={false}
+              utc={false}
+              withTitle={false}
+            />
+          </td>
+          <td>
+            <ForwardRef(Bootstrap(Button))
+              id="btn-add-0"
+              onClick={[Function]}
+            >
+              Add meal
+            </ForwardRef(Bootstrap(Button))>
+          </td>
+          <td />
+        </tr>
+        <tr
+          key="TST21 LAX-BCN 30/09/2014 08:35"
+        >
+          <td>
+            <strong>
+              TST 21
+            </strong>
+          </td>
+          <td>
+            LAX
+            -
+            BCN
+          </td>
+          <td>
+            <t
+              ago={false}
+              calendar={false}
+              decimal={false}
+              element="time"
+              filter={[Function]}
+              format="ddd DD MMM YYYY"
+              fromNow={false}
+              interval={60000}
+              onChange={[Function]}
+              titleFormat=""
+              toNow={false}
+              unit={null}
+              unix={false}
+              utc={false}
+              withTitle={false}
+            >
+              2014-09-30T08:35:00.000+08:00
+            </t>
+          </td>
+          <td>
+            <t
+              ago={false}
+              calendar={false}
+              date="2014-09-30T19:45:00.000+08:00"
+              decimal={false}
+              duration="2014-09-30T08:35:00.000+08:00"
+              element="time"
+              filter={[Function]}
+              fromNow={false}
+              interval={60000}
+              onChange={[Function]}
+              titleFormat=""
+              toNow={false}
+              unit={null}
+              unix={false}
+              utc={false}
+              withTitle={false}
+            />
+          </td>
+          <td>
+            <ForwardRef(Bootstrap(Button))
+              id="btn-add-1"
+              onClick={[Function]}
+            >
+              Add meal
+            </ForwardRef(Bootstrap(Button))>
+          </td>
+          <td />
+        </tr>
+      </tbody>
+    </ForwardRef(Bootstrap(Table))>
+  </ForwardRef(Bootstrap(Row))>
+  <MealForm
+    meals={
+      Array [
+        Object {
+          "currency": "EUR",
+          "desc": "Snacks & Soda",
+          "mealId": "ML01",
+          "priceRange": Object {
+            "jump": 5,
+            "max": 20,
+            "min": 0,
+          },
+        },
+        Object {
+          "currency": "EUR",
+          "desc": "Light Dinner: Salad & Wine",
+          "mealId": "ML02",
+          "priceRange": Object {
+            "jump": 10,
+            "max": 50,
+            "min": 0,
+          },
+        },
+        Object {
+          "currency": "EUR",
+          "desc": "Dinner or Lunch: Meat with Pasta, Salad, Brad rolls, Tiramisu Cake, Cheese and Crackers.",
+          "mealId": "ML03",
+          "priceRange": Object {
+            "jump": 25,
+            "max": 100,
+            "min": 0,
+          },
+        },
+        Object {
+          "currency": "EUR",
+          "desc": "Breackfast: Yogurt, Juice or Cooffe, Bread and Cookies",
+          "mealId": "ML04",
+          "priceRange": Object {
+            "jump": 5,
+            "max": 20,
+            "min": 0,
+          },
+        },
+      ]
+    }
+    onHide={[Function]}
+    showModal={false}
+  />
+</Fragment>
+`;
