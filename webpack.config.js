@@ -2,7 +2,7 @@ const path = require("path");
 
 const BUILD_DIR = path.resolve(__dirname, "dist");
 const APP_DIR = path.resolve(__dirname, "src");
-
+const NODE_MODULES_DIR = path.resolve(__dirname, 'node_modules');
 const config = {
   entry: {
     bundle: `${APP_DIR}/index.jsx`
@@ -30,7 +30,13 @@ const config = {
         include: APP_DIR,
         use: [
           {
-            loader: "babel-loader"
+            loader: "babel-loader",
+            options: {
+              "presets": ["@babel/preset-env", "@babel/preset-react"],
+              "plugins": [
+                "@babel/plugin-proposal-class-properties"
+              ]
+            },
           },
           {
             loader: "eslint-loader"
@@ -106,6 +112,12 @@ const config = {
         }
       }
     }
+  },
+  resolve: {
+    modules: [
+      NODE_MODULES_DIR,
+      APP_DIR
+    ]
   }
 };
 
