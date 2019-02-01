@@ -1,0 +1,6 @@
+{
+  "name": "meal-form",
+  "version": "0.0.1",
+  "private": true,
+  "main": "form.jsx"
+}
