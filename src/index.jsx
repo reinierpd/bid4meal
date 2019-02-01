@@ -1,8 +1,6 @@
 // include font awesome icons and stylesheets
-import "@fortawesome/fontawesome-free-webfonts/css/fontawesome.css";
-import "@fortawesome/fontawesome-free-webfonts/css/fa-regular.css";
-import "@fortawesome/fontawesome-free-webfonts/css/fa-solid.css";
-import "@fortawesome/fontawesome-free-webfonts/css/fa-brands.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 // include bootstrap javascript so that we can leverage bootstrap
 // components wherever it’s handy
 import "bootstrap";
@@ -16,6 +14,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 import Main from "./components/main";
 import Home from "./views/home";
+
+library.add(faTrash);
 
 const App = () => (
   <div>

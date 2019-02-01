@@ -8,6 +8,7 @@ import Table from "react-bootstrap/Table";
 import MealForm from "components/form";
 import Moment from "react-moment";
 import inputData from "data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Booking extends React.Component {
   constructor(props) {
@@ -45,6 +46,14 @@ class Booking extends React.Component {
   getAddedMeal = journeyKey => {
     const { addedMeals } = this.state;
     return addedMeals.find(item => item.journeyKey === journeyKey);
+  };
+
+  removeMeal = meal => {
+    const { addedMeals } = this.state;
+    const filtered = addedMeals.filter(
+      item => item.journeyKey !== meal.journeyKey
+    );
+    this.setState({ addedMeals: filtered });
   };
 
   render() {
@@ -130,6 +139,15 @@ class Booking extends React.Component {
                         >
                           Add meal
                         </Button>
+                      )}{" "}
+                      {addedMeal && (
+                        <FontAwesomeIcon
+                          style={{ cursor: "pointer" }}
+                          role="button"
+                          onClick={() => this.removeMeal(addedMeal)}
+                          color="red"
+                          icon="trash"
+                        />
                       )}
                     </td>
                     <td>{addedMeal && addedMeal.amount}</td>

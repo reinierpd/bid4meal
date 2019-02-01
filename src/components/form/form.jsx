@@ -40,12 +40,13 @@ class MealForm extends React.Component {
 
   handleAddSubmit = e => {
     e.preventDefault();
-    const { onHide } = this.props;
+    const { onHide, meals } = this.props;
     const {
       selectedMeal: { mealId, currency, desc },
       amount
     } = this.state;
 
+    this.setState({ selectedMeal: meals[0], amount: meals[0].priceRange.min });
     onHide({
       amount,
       mealId,
