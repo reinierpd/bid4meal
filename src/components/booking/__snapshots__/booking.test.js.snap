@@ -117,6 +117,33 @@ exports[`Booking User add a meal for a fight 2`] = `
           </td>
           <td>
             Snacks & Soda
+             
+            <FontAwesomeIcon
+              border={false}
+              className=""
+              color="red"
+              fixedWidth={false}
+              flip={null}
+              icon="trash"
+              inverse={false}
+              listItem={false}
+              mask={null}
+              onClick={[Function]}
+              pull={null}
+              pulse={false}
+              role="button"
+              rotation={null}
+              size={null}
+              spin={false}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+              symbol={false}
+              title=""
+              transform={null}
+            />
           </td>
           <td>
             10
@@ -212,6 +239,7 @@ exports[`Booking User add a meal for a fight 2`] = `
                 </button>
               </Button>
             </ForwardRef(Bootstrap(Button))>
+             
           </td>
           <td />
         </tr>
@@ -369,6 +397,7 @@ exports[`Booking should render ok 1`] = `
             >
               Add meal
             </ForwardRef(Bootstrap(Button))>
+             
           </td>
           <td />
         </tr>
@@ -433,6 +462,7 @@ exports[`Booking should render ok 1`] = `
             >
               Add meal
             </ForwardRef(Bootstrap(Button))>
+             
           </td>
           <td />
         </tr>

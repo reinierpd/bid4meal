@@ -125,6 +125,7 @@ exports[`MealForm should render ok 1`] = `
       Close
     </ForwardRef(Bootstrap(Button))>
     <ForwardRef(Bootstrap(Button))
+      disabled={true}
       onClick={[Function]}
       variant="primary"
     >

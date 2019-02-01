@@ -61,7 +61,7 @@ class MealForm extends React.Component {
 
   render() {
     const { meals, showModal, onHide } = this.props;
-    const { selectedMeal } = this.state;
+    const { selectedMeal, amount } = this.state;
     return (
       <Modal
         size="lg"
@@ -110,7 +110,11 @@ class MealForm extends React.Component {
           <Button variant="outline-secondary" onClick={() => onHide()}>
             Close
           </Button>
-          <Button variant="primary" onClick={this.handleAddSubmit}>
+          <Button
+            disabled={amount === 0}
+            variant="primary"
+            onClick={this.handleAddSubmit}
+          >
             Add
           </Button>
         </Modal.Footer>
