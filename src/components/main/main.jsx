@@ -13,6 +13,6 @@ const Main = ({ views }) => (
 );
 
 Main.propTypes = {
-  views: PropTypes.instanceOf(PropTypes.Array).isRequired
+  views: PropTypes.arrayOf(PropTypes.shape({})).isRequired
 };
 export default Main;
