@@ -1,23 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home should render ok 1`] = `
-<div
-  className="container"
->
-  <div
-    className="jumbotron"
+<ForwardRef(Bootstrap(Container))>
+  <h1
+    className="display-4"
   >
-    <h1
-      className="display-4"
-    >
-      Bid 4 Meal
-    </h1>
-    <hr
-      className="my-4"
-    />
-    <p>
-      Home component.
-    </p>
-  </div>
-</div>
+    My Booking
+  </h1>
+  <hr
+    className="my-4"
+  />
+  <Booking />
+</ForwardRef(Bootstrap(Container))>
 `;

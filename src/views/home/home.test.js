@@ -5,13 +5,8 @@ import { shallow } from "enzyme";
 import Home from "./home";
 
 describe("Home", () => {
-  let wrapper;
-
-  beforeEach(() => {
-    wrapper = shallow(<Home />);
-  });
-
-  test("should render ok", () => {
+  it("should render ok", () => {
+    const wrapper = shallow(<Home />);
     expect(wrapper).toMatchSnapshot();
   });
 });
